@@ -11,12 +11,14 @@ import { IconsComponent } from '../../icons/icons.component';
 import { MapsComponent } from '../../maps/maps.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
+import { StarRatingComponent} from '../../components/star-rating/star-rating.component';
 
 import {
-  MatButtonModule,
-  MatInputModule,
-  MatRippleModule,
-  MatTooltipModule,
+    MatButtonModule, MatIconModule,
+    MatInputModule,
+    MatRippleModule,
+    MatTooltipModule,
+    MatSnackBarModule,
 } from '@angular/material';
 @NgModule({
   imports: [
@@ -24,6 +26,8 @@ import {
     RouterModule.forChild(AdminLayoutRoutes),
     FormsModule,
     MatButtonModule,
+    MatIconModule,
+    MatSnackBarModule,
     MatRippleModule,
     MatInputModule,
     MatTooltipModule,
@@ -37,6 +41,7 @@ import {
     MapsComponent,
     NotificationsComponent,
     UpgradeComponent,
+      StarRatingComponent,
   ]
 })
 
